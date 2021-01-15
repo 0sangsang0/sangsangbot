@@ -1,8 +1,10 @@
 # -*- coding:utf-8 -*- #
 
 import discord
+import os
 
-token = "Nzk5NTQ5MDk0MzQ2ODgzMDky.YAFMHg.W63dm214uYp-xC3_xU9ldplD1NM"
+access_token = os.environ['BOT_TOKEN']
+token = access_token
 client = discord.Client()
 
 @client.event
